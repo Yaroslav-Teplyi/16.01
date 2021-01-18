@@ -1,4 +1,146 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: url(../fonts/GoogleSans-Regular.woff2) format("woff2");
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: #edebf2
+}
+
+.container {
+    width: 640px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg-picture {
+    background-image: url(../img/bg.jpg);
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin: 12px 0;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-form .content-block {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 24px;
+    position: relative;
+}
+
+.title-block {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #202124;
+}
+
+.title-block__hr {
+    background: #483b7e;
+    height: 10px;
+    width: 638px;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.title-block__title {
+    font-family: "Google Sans", "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 135%;
+}
+
+.title-block__desc {
+    letter-spacing: .2px;
+    margin-top: 12px;
+}
+
+.title-block__text {
+    color: #d93025;
+    letter-spacing: .2px;
+    margin-top: 12px;
+}
+
+.content-block:nth-child(3) .content-block__title::after {
+    content: " *";
+    color: #d93025;
+}
+
+.content-block__title {
+    font-family: "Google Sans", "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: .1px;
+    line-height: 24px;
+    color: #202124;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.content-block li {
+    padding: .5em .5em .5em 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: #202124;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    line-height: 16px;
+    color: rgba(0,0,0,0.66);
+}
+
+.footer__text {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.footer__links a {
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.googleForms {
+    margin: 24px 0;
+    opacity: .26;
+}
+
+.googleForms__link {
+    text-decoration: none;
+}
+
+.googleForms__link span {
+    cursor: pointer;
+    color: black;
+    font-size: 22.1px;
+    position: relative;
+    top: -6px;
 }

@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slyle.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="content-block bg-picture"></div>
+
+        <form action="#" class="main-form">
+            <div class="content-block title-block">
+                <div class="title-block__hr"></div>
+                <h1 class="title-block__title">Party Invite</h1>
+                <p class="title-block__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis sem odio. Sed commodo vestibulum leo, sit amet tempus odio consectetur in. 
+                </p>
+                <p class="title-block__text">* Обязательно</p>
+            </div>
+
+            <div class="content-block">
+                <h2 class="content-block__title">
+                    What is your name?
+                </h2>
+                <input type="text" placeholder="Мой ответ" name="userName">
+            </div>
+
+            <div class="content-block">
+                <h2 class="content-block__title">
+                    Can you attend?
+                </h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="attend" id="attendYes"><label for="attendYes">Yes, I'll be there</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="attend" id="attendNo"><label for="attendNo">Sorry, can't make it</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2 class="content-block__title">
+                    How many of you are attending?
+                </h2>
+                <input type="text" placeholder="Мой ответ" name="userAttend">
+            </div>
+
+            <div class="content-block">
+                <h2 class="content-block__title">
+                    What will you be bringing?
+                </h2>
+                <h4 class="content-block__subtitle">
+                    Let us know what kind of dish(es) you'll be bringing
+                </h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="userFood" id="userFood00"><label for="userFood00">Mains</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="userFood" id="userFood01"><label for="userFood01">Salad</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="userFood" id="userFood02"><label for="userFood02">Dessert</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="userFood" id="userFood03"><label for="userFood03">Drinks</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="userFood" id="userFood04"><label for="userFood04">Sides/Appetizers</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="userFood" id="userFood05"><label for="userFood05">Другое:</label>
+                        <input type="text" name="userFood">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2 class="content-block__title">
+                    Do you have any allergies or dietary restrictions?
+                </h2>
+                <input type="text" placeholder="Мой ответ" name="userAllegries">
+            </div>
+
+            <div class="content-block">
+                <h2 class="content-block__title">
+                    What is your email address?
+                </h2>
+                <input type="text" placeholder="Мой ответ" name="userEmail">
+            </div>
+
+            <button type="submit" class="main-form__submit">Отправить</button>
+        </form>
+
+        <footer class="footer">
+            <p class="footer__text">
+                Никогда не используйте формы Google для передачи паролей.
+            </p>
+            <p class="footer__links">
+                Компания Google не имеет никакого отношения к этому контенту. <a href="#">Сообщение о нарушении</a> - <a href="#">Условия использования</a> - <a href="#">Политика конфиденциальности</a>
+            </p>
+            <div class="googleForms">
+                <a href="#" class="googleForms__link">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg" alt="Google">
+                    <span>Формы</span>
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
