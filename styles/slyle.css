@@ -97,6 +97,48 @@ ul {
     margin-bottom: 16px;
 }
 
+.checkbox-block .content-block__title {
+    margin-bottom: 0;
+}
+
+.checkbox-block li:nth-child(6) label {
+    padding-right: 33px;
+}
+
+.content-block__subtitle {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    line-height: 16px;
+    line-height: 135%;
+    margin: 4px 0 16px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #dadce0;;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: #202124;
+    width: 50%;
+    padding: 15px 0 3px;
+    margin-bottom: 8px;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    border-bottom: 2px solid #483b7e;
+}
+
+input[name="userFood"] {
+    padding-top: 0;
+    width: 100%;
+}
+
 .content-block li {
     padding: .5em .5em .5em 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -107,6 +149,60 @@ ul {
     color: #202124;
     display: flex;
     align-items: center;
+}
+
+.main-form__submit {
+    color: #fff;
+    font-family: "Google Sans", "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 36px;
+    padding: 0 24px;
+    background-color: #483b7e;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+.main-form__submit:hover {
+    opacity: 0.9;
+}
+
+input[type="radio"] {
+    padding: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid #5f6368;
+}
+
+label {
+    margin-left: 34px;
+}
+
+.input-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 9px;
+}
+
+.input-wrapper:hover {
+    background: #f8f8fa;
+}
+
+.input-wrapper:active {
+    background: #e4e2ec;
 }
 
 .footer {
